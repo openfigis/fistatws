@@ -22,4 +22,11 @@
 	</build>
 
 
+	<dependencies>
+		<dependency>
+			<groupId>org.fistatws</groupId>
+			<artifactId>fistatws-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
