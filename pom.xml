@@ -86,44 +86,14 @@
 
 			<!-- logging -->
 
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>${slf4j.version}</version>
-				<scope>compile</scope>
-			</dependency>
 
 			<!-- CDI injection -->
 
 
-			<dependency>
-				<groupId>javax.inject</groupId>
-				<artifactId>javax.inject</artifactId>
-				<version>1</version>
-				<scope>compile</scope>
-			</dependency>
 
 
-			<dependency>
-				<groupId>javax.enterprise</groupId>
-				<artifactId>cdi-api</artifactId>
-				<version>1.1</version>
-				<scope>compile</scope>
-			</dependency>
 
-			<dependency>
-				<groupId>org.jboss.weld.servlet</groupId>
-				<artifactId>weld-servlet-core</artifactId>
-				<version>${weld.version}</version>
-				<scope>runtime</scope>
-			</dependency>
 
-			<dependency>
-				<groupId>org.jboss.weld</groupId>
-				<artifactId>weld-core</artifactId>
-				<version>${weld.version}</version>
-				<scope>runtime</scope>
-			</dependency>
 
 
 
@@ -132,34 +102,10 @@
 
 			<!-- testing -->
 
-			<dependency>
-				<groupId>org.mockito</groupId>
-				<artifactId>mockito-core</artifactId>
-				<version>1.9.5</version>
-				<scope>test</scope>
-			</dependency>
 
-			<dependency>
-				<groupId>com.googlecode.jeeunit</groupId>
-				<artifactId>jeeunit-weld-se</artifactId>
-				<version>1.0.0</version>
-				<scope>test</scope>
-			</dependency>
 
 			<!-- required by jeeunit-weld-se -->
-			<dependency>
-				<groupId>org.jboss.weld.se</groupId>
-				<artifactId>weld-se</artifactId>
-				<version>${weld.version}</version>
-				<scope>test</scope>
-			</dependency>
 
-			<dependency>
-				<groupId>org.jglue.cdi-unit</groupId>
-				<artifactId>cdi-unit</artifactId>
-				<version>2.1.1</version>
-				<scope>test</scope>
-			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
@@ -167,16 +113,6 @@
 				<scope>test</scope>
 			</dependency>
 
-			<dependency>
-				<groupId>ch.qos.logback</groupId>
-				<artifactId>logback-classic</artifactId>
-				<version>1.0.13</version>
-			</dependency>
-			<dependency>
-				<groupId>org.fistatws</groupId>
-				<artifactId>fistatws-jaxb</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -187,10 +123,6 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.inject</groupId>
-			<artifactId>javax.inject</artifactId>
 		</dependency>
 	</dependencies>
 
