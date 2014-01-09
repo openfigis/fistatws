@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema elementFormDefault="qualified" targetNamespace="http://www.fao.org/fi/skate/search/" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:search="http://www.fao.org/fi/skate/search/">
+
+	<!-- comments -->
+
+
+	<complexType name="MultiQuerySearchResultType">
+		<sequence>
+			<element name="publicationSearchResultList" type="search:PublicationSearchResultType"></element>
+		</sequence>
+	</complexType>
+	<complexType name="PublicationSearchResultType">
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<element name="publicationEntryFound" type="search:PublicationEntryFoundType"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="PublicationEntryFoundType">
+		<attribute name="title" type="string"></attribute>
+		<attribute name="abstract" type="string"></attribute>
+		<attribute name="author" type="string"></attribute>
+		<attribute name="pages" type="string"></attribute>
+		<attribute name="biblioReference" type="string"></attribute>
+		<attribute name="owner" type="string"></attribute>
+		<attribute name="jobNumber" type="string"></attribute>
+		<attribute name="documentNumber" type="string"></attribute>
+		<attribute name="series" type="string"></attribute>
+		<attribute name="language" type="string"></attribute>
+		<attribute name="statutoryBody" type="string"></attribute>
+		<attribute name="isbn" type="string"></attribute>
+		<attribute name="programmeName" type="string"></attribute>
+		<attribute name="projectName" type="string"></attribute>
+		<attribute name="publicationType" type="string"></attribute>
+		<attribute name="country" type="string"></attribute>
+		<attribute name="year" type="int"></attribute>
+		<attribute name="htmlUrl" type="string"></attribute>
+		<attribute name="pdfUrl" type="string"></attribute>
+		<attribute name="zipUrl" type="string"></attribute>
+		<attribute name="coverUrl" type="string"></attribute>
+		<attribute name="popupUrl" type="string"></attribute>
+	</complexType>
+
+
+	<!-- the future one, not yet used -->
+	<element name="MultiQuerySearchResult" type="search:MultiQuerySearchResultType"></element>
+
+	<!-- to be used for search in publications -->
+	<element name="PublicationSearchResult" type="search:PublicationSearchResultType"></element>
+
+	<element name="OtherSystemSearchResult"></element>
+
+</schema>
